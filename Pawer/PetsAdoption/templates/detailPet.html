@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center text-primary fw-bold">{{ pet.name }}</h1>
+    
+    <div class="card shadow-lg p-4">
+        <h2 class="text-secondary">Información de la Mascota</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Edad:</strong> {{ pet.age }} años</li>
+            <li class="list-group-item"><strong>Raza:</strong> {{ pet.species }}</li>
+            <li class="list-group-item"><strong>Tamaño:</strong> {{ pet.size }} cm</li>
+            <li class="list-group-item"><strong>Género:</strong> {{ pet.gender }}</li>
+            <li class="list-group-item"><strong>Espacio requerido:</strong> {{ pet.space_required }}</li>
+            <li class="list-group-item"><strong>Descripción:</strong> {{ pet.description }}</li>
+            <li class="list-group-item"><strong>Compatibilidad:</strong> {{ pet.compatibility }}</li>
+        </ul>
+        
+        <div class="text-center mt-4">
+            <a href="{% url 'edit_pet' pet.id %}" class="btn btn-warning">Modificar</a>
+        </div>
+        <div class="text-center mt-4">
+            <a href="{% url 'delete_pet' pet.id %}" class="btn btn-warning">Borrar</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
