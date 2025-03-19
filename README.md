@@ -2,5 +2,5 @@
 
 <div align="center">Bienvenido a <strong>PAWER</strong>, <br>
   nuestro portal de adopción y tienda de productos para mascotas virtual.<br><br>
-  Para saber más de nuestro proyecto, dirígete a la Wiki en: https://github.com/tebanduarte2/PAWER/wiki/Inicio
+  Para saber más de nuestro proyecto, dirígete a la Wiki en: [Ver Wiki](../../wiki)
 </div>
